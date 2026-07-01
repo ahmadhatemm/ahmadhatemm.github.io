@@ -15,172 +15,146 @@
 	<body class="is-preload">
 
 		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">Who we are</a></li>
-							<li><a href="#two">What we do</a></li>
-							<li><a href="#three">Get in touch</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
+		<section id="sidebar">
+			<div class="inner">
+				<nav>
+					<ul>
+						<li><a href="#intro">Home</a></li>
+						<li><a href="#one">Technical Projects</a></li>
+						<li><a href="#two">Technical Skills</a></li>
+						<li><a href="#three">Contact & Links</a></li>
+					</ul>
+				</nav>
+			</div>
+		</section>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
 
 				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Hyperspace</h1>
-							<p>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
-							and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p>
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
-							</ul>
-						</div>
-					</section>
+<section id="intro" class="wrapper style1 fullscreen fade-up">
+	<div class="inner">
+		<h1>Ahmad Hatem</h1>
+		<p>I’m a third-year Mechatronics Engineering student pursuing a dual degree at the University of East London and Ain 
+Shams University. I have hands-on experience in data analysis, PCB design, and robotics through trainings at Google, 
+ASU Racing Team, and Orascom Construction. Skilled in Arduino, programming, and PCB and 3D design, I am passionate 
+about innovation, problem-solving, and applying technology to real-world challenges to improve people’s lives. </p>
+		<ul class="actions">
+			<li><a href="#one" class="button scrolly">View My Work</a></li>
+		</ul>
+	</div>
+</section>
 
 				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Sed ipsum dolor</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Feugiat consequat</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Ultricies aliquam</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>
+<section id="one" class="wrapper style2 fade-up">
+	<div class="inner">
+		<h2>Technical Projects</h2>
+		<p>Explore full-cycle builds grouped by specialized engineering sectors.</p>
+		
+		<div class="project-filters" style="margin-bottom: 2rem;">
+			<button class="button small active-filter" onclick="filterSelection('all')">Show All</button>
+			<button class="button small" onclick="filterSelection('robotics')">Robotics & AV</button>
+			<button class="button small" onclick="filterSelection('embedded')">Embedded & Automation</button>
+			<button class="button small" onclick="filterSelection('software')">Software & Data</button>
+		</div>
+
+		<div class="row">
+			
+			<div class=" col-12-medium project-card robotics">
+				<h3>6-DOF Robotic Manipulator</h3>
+				<div class="project-image-container">
+        <img src="images/6dof robot pic.png" alt="6-DOF Manipulator Simulation Analysis">
+    </div>
+				<p>Designed, simulated, and physically integrated a 6-DOF robotic manipulator (4-DOF arm + 2-DOF independently actuated gripper). The project bridges the gap between digital twin simulation and real-world micro-ROS hardware actuation.</p>
+				<ul class="actions">
+					<li><a href="#" class="button small">View Details</a></li>
+				</ul>
+			</div>
+
+			<div class=" col-12-medium project-card embedded">
+				<h3>Smart Balance Control System</h3>
+				<p>PID control logic, IMU sensor data filtering, and real-time motor actuation loops using C++.</p>
+				<ul class="actions">
+					<li><a href="#" class="button small">View Details</a></li>
+				</ul>
+			</div>
+
+			<div class=" col-12-medium project-card embedded">
+				<h3>Home Library Automation System</h3>
+				<p>Developed inventory categorization hardware utilizing microcontrollers, item trackers, and state monitoring.</p>
+				<ul class="actions">
+					<li><a href="#" class="button small">View Details</a></li>
+				</ul>
+			</div>
+
+			<div class=" col-12-medium project-card software">
+				<h3>EcoBee UI Platform</h3>
+				<p>Python-based telemetry control interface tracking autonomous path states and mobile collection variables.</p>
+				<ul class="actions">
+					<li><a href="#" class="button small">View Details</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</section>
 
 				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>What we do</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>Lorem ipsum amet</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-lock"></span>
-									<h3>Aliquam sed nullam</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-cog"></span>
-									<h3>Sed erat ullam corper</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-desktop"></span>
-									<h3>Veroeros quis lorem</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-link"></span>
-									<h3>Urna quis bibendum</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-gem"></span>
-									<h3>Aliquam urna dapibus</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-							</div>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul>
-						</div>
-					</section>
+					<!-- Two -->
+<section id="two" class="wrapper style3 fade-up">
+	<div class="inner">
+		<h2>Technical Skills</h2>
+		<p>Core competencies bridged across mechanical design, embedded software architecture, and high-level control loop algorithms.</p>
+		<div class="features">
+			<section>
+				<span class="icon solid major fa-code"></span>
+				<h3>Robotics Frameworks</h3>
+				<p>ROS 2 (Humble), MoveIt 2, Gazebo Simulation, RViz2, micro-ROS environment mapping.</p>
+			</section>
+			<section>
+				<span class="icon solid major fa-microchip"></span>
+				<h3>Embedded Systems</h3>
+				<p>Microcontrollers (ESP32, Arduino), C/C++ development, firmware optimization, serial protocols (I2C, SPI, UART).</p>
+			</section>
+			<section>
+				<span class="icon solid major fa-cog"></span>
+				<h3>CAD & Mechanical Modeling</h3>
+				<p>SolidWorks (parametric assembly, mesh modification), Autodesk Inventor, URDF/Xacro robot generation.</p>
+			</section>
+			<section>
+				<span class="icon solid major fa-desktop"></span>
+				<h3>Software & Controls</h3>
+				<p>Python (GUI engineering), MATLAB / Simulink, Stateflow logic systems development.</p>
+			</section>
+		</div>
+	</div>
+</section>
 
 				<!-- Three -->
 					<section id="three" class="wrapper style1 fade-up">
 						<div class="inner">
 							<h2>Get in touch</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
 							<div class="split style1">
 								<section>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
-										</ul>
-									</form>
+									<section>
+	<h3>Let's Connect</h3>
+	<p>Always open to collaborating on automated systems, robotics research, or core embedded systems positions.</p>
+	<ul class="contact">
+		<li>
+			<h3>Email</h3>
+			<a class = "email" href="mailto:your.email@example.com">ahmadhatemmahmoud@gmail.com</a>
+		</li>
+		<li>
+			<h3>Socials & Source Code</h3>
+			<ul class="icons">
+				<li><a href="https://github.com/ahmadhatemm" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				<li><a href="https://linkedin.com/in/ahmadhatem33" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+			</ul>
+		</li>
+	</ul>
+</section>
 								</section>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<span>12345 Somewhere Road #654<br />
-											Nashville, TN 00000-0000<br />
-											USA</span>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="#">user@untitled.tld</a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>(000) 000-0000</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
+								
 							</div>
 						</div>
 					</section>
@@ -204,6 +178,31 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+		<script>
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("project-card");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+    if (x[i].className.indexOf(c) > -1) {
+      x[i].style.display = "block";
+    }
+  }
+  
+  // Add active styling to current button
+  var btnContainer = document.querySelector(".project-filters");
+  var btns = btnContainer.getElementsByClassName("button");
+  for (var j = 0; j < btns.length; j++) {
+    btns[j].addEventListener("click", function(){
+      var current = btnContainer.getElementsByClassName("active-filter");
+      if (current.length > 0) { current[0].className = current[0].className.replace(" active-filter", ""); }
+      this.className += " active-filter";
+    });
+  }
+}
+// Run default on load
+filterSelection('all');
+</script>
 	</body>
 </html>

@@ -3907,3 +3907,147 @@ input, select, textarea {
 			}
 
 		}
+/* --- CUSTOM LIGHT THEME OVERRIDE --- */
+/* --- CUSTOM LIGHT THEME OVERRIDE v2 --- */
+body, #wrapper, section.wrapper {
+    background-color: #ffffff !important;
+    color: #555555 !important; /* Clean Dark Grey Body Text */
+}
+
+/* Sidebar Styling */
+#sidebar {
+    background-color: #f4f4f6 !important; /* Muted Grey Sidebar */
+    box-shadow: inset -1px 0 0 0 rgba(0,0,0,0.1) !important;
+}
+#sidebar nav ul li a {
+    color: #555555 !important;
+}
+#sidebar nav ul li a.active {
+    color: #6f42c1 !important; /* Purple for Active Link */
+}
+#sidebar nav ul li a:after {
+    background-color: #6f42c1 !important;
+}
+
+/* Headings & High-Impact Text */
+h1, h2, h3, h4, h5, h6, strong {
+    color: #6f42c1 !important; /* True Engineering Purple */
+}
+
+/* Technical Skill Icons Circle Border Fix */
+/* Technical Skill Icons: White Icon with Solid Purple Circle Background */
+.icon.major {
+    color: #ffffff !important;           /* Makes the icon itself solid white */
+    background-color: #6f42c1 !important; /* Fills the circle background with Purple */
+    box-shadow: none !important;          /* Removes the old inner ring border line */
+    border-radius: 50%;                   /* Keeps it perfectly circular */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;                        /* Perfectly sizes the circular container */
+    height: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Sections Background Fixes */
+.wrapper.style1, .wrapper.style2, .wrapper.style3 {
+    background-color: #ffffff !important;
+}
+
+/* --- BUTTONS & FILTER STATES FIXED --- */
+input[type="submit"], input[type="reset"], input[type="button"], .button {
+    box-shadow: inset 0 0 0 1px #6f42c1 !important;
+    color: #6f42c1 !important;
+    background-color: transparent !important;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Hovering over normal buttons */
+input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, .button:hover {
+    background-color: #6f42c1 !important;
+    color: #ffffff !important; /* Text switches to white on hover */
+}
+
+/* Clicked / Active Filter State */
+.active-filter {
+    background-color: #6f42c1 !important;
+    color: #ffffff !important; /* Forces solid white text */
+    box-shadow: none !important;
+}
+
+/* Hovering over the active filter button */
+.active-filter:hover {
+    background-color: #5a32a3 !important; /* Slightly darker purple on hover */
+    color: #ffffff !important;
+}
+
+/* Single Column Project Card Layout */
+.project-card {
+    padding: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    background: #fdfdfd;
+    width: 100% !important; /* Ensures it consumes full row width */
+}
+/* Custom Sizing for Project Sector Filter Buttons */
+.project-filters .button {
+    font-size: 0.75rem !important;   /* Makes text larger and highly readable */
+    letter-spacing: 0.1em !important; /* Cleans up character squishing */
+    padding: 0 1.75rem !important;    /* Widens the button capsule horizontally */
+    height: 2.75rem !important;       /* Increases height to match the new width */
+    line-height: 2.75rem !important;  /* Centers text perfectly inside the taller button */
+    margin-right: 0.5rem !important;  /* Gives spaces between the buttons */
+    margin-bottom: 0.5rem !important; /* Adds clean spacing if buttons wrap on mobile */
+}
+/* Custom Sizing for View Details Action Buttons */
+.project-card .actions .button {
+    font-size: 0.6rem !important;    /* Matches the clean, readable size of the filter text */
+    letter-spacing: 0.12em !important; /* Spacers out characters for a professional look */
+    padding: 0 1rem !important;       /* Gives the button a solid, prominent width */
+    height: 2rem !important;        /* Makes the button thicker and easier to tap/click */
+    line-height: 2rem !important;   /* Aligns the text right in the center */
+}
+/* Fix for Contact Social Icons disappearing on hover */
+ul.icons li a:hover {
+    color: #6f42c1 !important; /* Changes icon to Purple when hovered */
+}
+a.email:hover {
+    color: #6f42c1 !important; /* Changes icon to Purple when hovered */
+}
+/* Force-Kill Pink Gradient Overlays on Major Icons */
+.icon.major:before {
+    background: none !important;
+    background-image: none !important;
+}
+
+.icon.major {
+    color: #ffffff !important;           /* Solid white icon symbol */
+    background-color: #6f42c1 !important; /* True solid purple background */
+    background-image: none !important;    /* Kills the pink template gradient */
+    box-shadow: none !important;          
+    border-radius: 50% !important;        
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+/* Custom: Override features section icon colors from pink to white */
+.features section .icon.major:before {
+    color: #ffffff !important;
+}
+/* Custom Portfolio Project Image Constraints */
+.project-image-container {
+    width: 100%;
+    max-width: 650px;       /* Keeps the image at a professional, crisp desktop size */
+    margin: 1rem 0 1.5rem 0; /* Adds clean spacing around the media block */
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.project-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
