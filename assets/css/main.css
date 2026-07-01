@@ -4051,3 +4051,15 @@ a.email:hover {
     display: block;
     object-fit: cover;
 }
+.portfolio-hero-img {
+    /* Set your new smaller dimensions here (e.g., shrinking it to 50% of the row) */
+    width: 100%;
+    max-width: 450px;       /* Shrinks the maximum width boundary */
+    height: 300px;          /* Shrinks the maximum height boundary */
+    
+    object-fit: contain;    /* THE FIX: Shrinks the photo without forcing a hard crop or distortion */
+    object-position: center;/* Keeps it beautifully centered in its frame */
+    
+    background-color: transparent !important; /* Ensures no weird background colors show around it */
+	
+}
