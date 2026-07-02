@@ -4063,3 +4063,17 @@ a.email:hover {
     background-color: transparent !important; /* Ensures no weird background colors show around it */
 	
 }
+/* Custom Top-Left Brand Logo Styling */
+.title {
+    display: inline-flex !important;
+    align-items: center; /* Vertically centers the icon with your name */
+    gap: 10px;           /* Adds a clean space between the icon and text */
+}
+
+.nav-logo {
+    width: 32px;         /* Keeps the icon small and neat */
+    height: 32px;        /* Maintains square dimensions */
+    object-fit: contain;
+    border-radius: 4px;  /* Optional: slightly curves the icon corners */
+    vertical-align: middle;
+}
