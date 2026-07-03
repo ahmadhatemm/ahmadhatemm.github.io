@@ -3990,14 +3990,24 @@ input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hove
     background: #fdfdfd;
     width: 100% !important; /* Ensures it consumes full row width */
 }
-/* Custom Sizing for Project Sector Filter Buttons */
+/* 1. The Parent Container: This handles the sticking and background block */
+.project-filters {
+    position: -webkit-sticky;   /* For Safari compatibility */
+    position: sticky !important; 
+    top: 0 !important;           /* Anchors the entire bar to the top */
+    z-index: 100 !important;     /* Keeps the whole bar above project cards */
+    background-color: #fff;      /* Solid white background blocking out text beneath it */
+    padding: 10px 0;             /* Optional: adds a little breathing room above/below buttons */
+}
+
+/* 2. The Buttons: These handle just their own shapes, fonts, and sizes */
 .project-filters .button {
-    font-size: 0.75rem !important;   /* Makes text larger and highly readable */
-    letter-spacing: 0.1em !important; /* Cleans up character squishing */
-    padding: 0 1.75rem !important;    /* Widens the button capsule horizontally */
-    height: 2.75rem !important;       /* Increases height to match the new width */
-    line-height: 2.75rem !important;  /* Centers text perfectly inside the taller button */
-    margin-right: 0.5rem !important;  /* Gives spaces between the buttons */
+    font-size: 0.75rem !important;   
+    letter-spacing: 0.1em !important; 
+    padding: 0 1.75rem !important;    
+    height: 2.75rem !important;       
+    line-height: 2.75rem !important;  
+    margin-right: 0.5rem !important;  
     margin-bottom: 0.5rem !important; /* Adds clean spacing if buttons wrap on mobile */
 }
 /* Custom Sizing for View Details Action Buttons */
@@ -4007,6 +4017,23 @@ input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hove
     padding: 0 1rem !important;       /* Gives the button a solid, prominent width */
     height: 2rem !important;        /* Makes the button thicker and easier to tap/click */
     line-height: 2rem !important;   /* Aligns the text right in the center */
+}
+/* Updated Sticky Parent Container with Full Visibility Fixes */
+.project-filters {
+    position: -webkit-sticky;   
+    position: sticky !important; 
+    
+    /* 🔴 THE FIX: Shift it down so it clears the main navbar */
+    top: 3.5rem !important;      /* If this is still slightly covered, try 4rem or 60px */
+    
+    width: 100% !important;      
+    display: block !important;   
+    clear: both;                 
+    
+    z-index: 99 !important;      /* Keep it just under the main navbar's z-index if needed */
+    background-color: #ffffff !important; 
+    padding: 15px 0 !important;  
+    border-bottom: 1px solid #eaeaea; 
 }
 /* Fix for Contact Social Icons disappearing on hover */
 ul.icons li a:hover {
