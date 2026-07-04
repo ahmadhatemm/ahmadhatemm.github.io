@@ -4104,3 +4104,22 @@ a.email:hover {
     border-radius: 4px;  /* Optional: slightly curves the icon corners */
     vertical-align: middle;
 }
+/* Responsive Fixes for Mobile Screens (Phones) */
+@media screen and (max-width: 736px) {
+    
+    /* 1. Eliminate the gap at the top and shrink the container height */
+    .project-filters {
+        top: 0 !important;             /* Pulls the container flush to the very top edge */
+        padding: 6px 0 !important;      /* slashes vertical spacing in half */
+    }
+
+    /* 2. Scale down button sizes so they fit clean across small screens */
+    .project-filters .button {
+        font-size: 0.5rem !important;  /* Shrinks the font slightly */
+        padding: 0 0.5rem !important;     /* Narrows button width horizontally */
+        height: 1.8rem !important;      /* Lowers the button height significantly */
+        line-height: 1.8rem !important; /* Re-centers text vertically */
+        margin-right: 0.25rem !important; /* Packs buttons tighter together */
+        margin-bottom: 0.25rem !important;
+    }
+}
