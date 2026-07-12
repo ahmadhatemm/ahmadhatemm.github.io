@@ -4123,3 +4123,10 @@ a.email:hover {
         margin-bottom: 0.25rem !important;
     }
 }
+.project-date {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #666; /* Subtle gray so it doesn't distract from the title */
+    margin-bottom: 8px;
+    font-weight: 500;
+}

@@ -186,5 +186,27 @@
 
 				}
 			});
+			
+// Ensure the DOM is completely ready for manipulation
+    $(function() {
+        // Target the standard template row container that holds your cards
+        var $container = $('.project-card').first().parent();
 
+        if ($container.length && $('.project-card').length) {
+            // Select all elements matching your card class
+            var $projects = $container.find('.project-card');
+
+            // Sort them using a standard array comparison
+            $projects.sort(function(a, b) {
+                var dateA = $(a).attr('data-date') || '';
+                var dateB = $(b).attr('data-date') || '';
+                
+                // Descending order (newest first)
+                return dateB.toString().localeCompare(dateA.toString());
+            });
+
+            // Detach and cleanly re-append them to the row layout
+            $container.append($projects);
+        }
+    });
 })(jQuery);
