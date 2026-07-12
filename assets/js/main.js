@@ -204,9 +204,20 @@
                 // Descending order (newest first)
                 return dateB.toString().localeCompare(dateA.toString());
             });
+			
 
             // Detach and cleanly re-append them to the row layout
             $container.append($projects);
         }
+// Automatically scroll to the top of the Technical Projects section when a filter is clicked
+    $('.project-filters').on('click', 'button', function() {
+        var $targetSection = $('#one');
+        
+        if ($targetSection.length) {
+            $('html, body').stop().animate({
+                scrollTop: $targetSection.offset().top - 20
+            }, 2000); // 500ms smooth transition to the top of the section
+        }
+    });
     });
 })(jQuery);
