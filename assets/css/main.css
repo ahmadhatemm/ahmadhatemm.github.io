@@ -4130,3 +4130,103 @@ a.email:hover {
     margin-bottom: 8px;
     font-weight: 500;
 }
+/* ==========================================================================
+   Solid Purple Navigation Header / Sidebar Style
+   ========================================================================== */
+
+#sidebar {
+    background-color: #4b307b !important; /* Solid deep purple */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#sidebar .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+#sidebar nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center options horizontally */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 0.5rem;
+}
+
+#sidebar nav ul li {
+    margin: 0;
+    padding: 0;
+}
+/* Match HTML5 UP Body Heading Font & Style */
+#sidebar nav ul li a {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: rgba(255, 255, 255, 0.75) !important;
+    text-decoration: none;
+    
+    /* Inherit exact site typography */
+    font-family: inherit;            /* Uses Raleway from your main stylesheet */
+    text-transform: uppercase !important;
+    font-size: 0.75rem;              /* Scaled down to match button proportions */
+    font-weight: 700;                /* Semi-bold/Bold to match headings */
+    letter-spacing: 0.15em;          /* Wide tracking to match "SHOW ALL" tags */
+    
+    padding: 0.8rem 1.2rem;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Hover State */
+#sidebar nav ul li a:hover {
+    color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Active State */
+#sidebar nav ul li a.active {
+    color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-bottom: 3px solid #ffffff !important;
+}
+/* Logo styling inside Home button */
+.nav-logo {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+/* Custom Download Report Button Styling */
+.report-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.6rem 1.6rem !important;
+    border-radius: 20px !important; /* Creates the exact round pill shape */
+    border: 2px solid #6c42a0 !important; /* Matches your purple button outlines */
+    color: #6c42a0 !important;
+    background-color: transparent !important;
+    font-family: inherit;
+    font-size: 0.7rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.15em !important;
+    text-transform: uppercase !important;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+}
+
+.report-btn:hover {
+    background-color: #6c42a0 !important; /* Solid purple fill on hover */
+    color: #ffffff !important;             /* White text on hover */
+    box-shadow: 0 4px 12px rgba(108, 66, 160, 0.25);
+    transform: translateY(-2px);
+}
+
+.report-btn i {
+    font-size: 0.9rem;
+}
