@@ -4230,3 +4230,19 @@ a.email:hover {
 .report-btn i {
     font-size: 0.9rem;
 }
+video {
+  width: 100%;
+  max-width: 650px; /* Adjust between 500px and 700px */
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px; /* Optional: gives clean rounded edges */
+}
+img {
+  width: 100%;
+  max-width: 650px; /* Adjust between 500px and 700px */
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px; /* Optional: gives clean rounded edges */
+}
