@@ -4246,3 +4246,22 @@ img {
   margin: 20px auto;
   border-radius: 8px; /* Optional: gives clean rounded edges */
 }
+#sidebar {
+  height: auto;
+  min-height: 0;
+}
+
+#sidebar > .inner {
+  height: auto;
+  min-height: 0;
+}
+#wrapper {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  width: 100% !important;
+}
+
+.inner {
+  max-width: 1200px; /* Centers page text content neatly */
+  margin: 0 auto;
+}
