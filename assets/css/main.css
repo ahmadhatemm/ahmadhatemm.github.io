@@ -3930,7 +3930,7 @@ body, #wrapper, section.wrapper {
 }
 
 /* Headings & High-Impact Text */
-h1, h2, h3, h4, h5, h6, strong {
+h1, h2, h3, h4, h5, h6 {
     color: #6f42c1 !important; /* True Engineering Purple */
 }
 
