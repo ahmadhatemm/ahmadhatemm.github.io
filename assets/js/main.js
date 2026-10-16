@@ -210,14 +210,39 @@
             $container.append($projects);
         }
 // Automatically scroll to the top of the Technical Projects section when a filter is clicked
-    $('.project-filters').on('click', 'button', function() {
-        var $targetSection = $('#one');
-        
-        if ($targetSection.length) {
-            $('html, body').stop().animate({
-                scrollTop: $targetSection.offset().top - 20
-            }, 2000); // 500ms smooth transition to the top of the section
-        }
+   $(document).ready(function() {
+
+        // Scroll hide/show logic for filter bar
+        var lastScrollTop = 0;
+        var $filterBar = $('.project-filters');
+
+        $(window).on('scroll', function() {
+            var currentScroll = $(this).scrollTop();
+
+            // Prevent unwanted triggers on elastic top-bounce
+            if (currentScroll < 0) return;
+
+            if (currentScroll > lastScrollTop && currentScroll > 100) {
+                // Scrolling DOWN -> Hide filters
+                $filterBar.addClass('nav-hidden');
+            } else {
+                // Scrolling UP -> Reveal filters
+                $filterBar.removeClass('nav-hidden');
+            }
+
+            lastScrollTop = currentScroll;
+        });
+
+        // Automatically scroll to top of section when a filter is clicked
+        $('.project-filters').on('click', 'button', function() {
+            var $targetSection = $('#one');
+            
+            if ($targetSection.length) {
+                $('html, body').stop().animate({
+                    scrollTop: $targetSection.offset().top - 20
+                }, 500); // Set to 500ms for a crisp smooth scroll
+            }
+        });
+
     });
-    });
-})(jQuery);
+})})(jQuery);

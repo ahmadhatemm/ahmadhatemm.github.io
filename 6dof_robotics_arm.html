@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>6-DOF Robotic Manipulator</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+<section id="sidebar">
+			
+			<div class="inner">
+				<nav>
+					
+					<ul>
+    <li>
+        <a href="index.html	#intro" class="nav-home-button">
+            <img src="images/favicon.png" alt="Logo" class="nav-logo"> 
+            <span>Home</span>
+        </a>
+    </li>
+    <li><a href="index.html#one" class="active">Technical Projects</a></li>
+    <li><a href="#two">Technical Skills</a></li>
+    <li><a href="#three">Contact & Links</a></li>
+</ul>
+				</nav>
+			</div>
+		</section>
+		
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">6-DOF Robotic Manipulator</h1>
+                            <div class="project-image-container" style="max-height: 280px; overflow: hidden; display: flex; justify-content: center; align-items: center; background: transparent;">
+    <img src="images/robotic_arm.png" alt="6-DOF Manipulator Simulation Analysis" style="max-height: 280px; width: auto; object-fit: contain;">
+</div>
+<!-- <video autoplay loop muted playsinline style="width: 100%; height: 450px; object-fit: cover; border-radius: 12px;">
+    <source src="" type="video/mp4">
+    Your browser does not support the video tag.
+</video></!-->		<p>Designed, simulated, and physically integrated a 6-DOF robotic manipulator (4-DOF arm + 2-DOF independently actuated gripper) as part of the Industrial Robotics curriculum at Ain Shams University. The project bridges the gap between digital twin simulation and real-world micro-ROS hardware actuation.
+</p><p>
+ Key Technical Implementations:
+• Robot Modeling: Developed a URDF/Xacro model from a SolidWorks assembly, configuring precise link inertias, joint limits, and bounding-box collision properties for physical accuracy.
+• Simulation & Motion Planning: Integrated the model into Gazebo Sim for dynamic physics testing and tuned PID joint controllers. Leveraged the MoveIt 2 Setup Assistant to configure custom planning groups, kinematics solvers (KDL), and execute collision-free Cartesian and joint-space trajectories in RViz2.
+• Hardware Integration: Established a physical control pipeline utilizing micro-ROS running on an ESP32 to actuate hardware servo motors mapping to virtual joint states.
+</p><p>
+Technical Challenges Overcome:
+• Solved micro-ROS serial buffer overflows (Handshake Loops) by optimizing Arduino code and right-sizing JointState message array capacities.
+• Resolved Command Execution Timeouts in MoveIt by throttling the controller update rate to a stable 25 Hz.
+• Fixed kinematic divergence between simulation and hardware by debugging joint-name mapping callbacks to handle multi-servo array synchronization.
+</p><p>
+Technologies Used: ROS 2, MoveIt 2, Gazebo Sim, RViz2, ESP32, micro-ROS, C++ (Arduino), Python, SolidWorks, Xacro/URDF.</p><div class="report-download-container" style="margin: 2rem 0;">
+    <a href="assets\reports\Industrial Robotics - Milestone1 Submission.pdf" download class="button report-btn">
+        <i class="icon solid fa-file-pdf"></i> Download Milestone 1 Report (PDF)
+    </a>
+    <a href="assets\reports\Industrial Robotics - Milestone 2.pdf" download class="button report-btn">
+        <i class="icon solid fa-file-pdf"></i> Download Milestone 2 Report (PDF)
+    </a>
+    <a href="assets\reports\Delta Robot Project_Report.pdf" download class="button report-btn">
+        <i class="icon solid fa-file-pdf"></i> Download Full Report (PDF)
+    </a>
+</div>
+						</div>
+					</section>
+					<!-- Downloadable Report Section -->
+
+
+			</div>
+
+		<footer id="footer" style="background-color: #493382; padding: 1.5rem 0; width: 100%;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center;">
+        
+        <!-- Left Side: Name and Title -->
+        <p style="margin: 0; font-size: 0.95rem; font-family: inherit;">
+            <strong style="color: #ffffff; font-weight: 600;">Ahmad Hatem</strong> 
+            <span style="color: #ffffff; margin: 0 0.5rem;">|</span> 
+            <span style="color: #ffffff;">Robotics & AI Specialist</span></p>
+
+        <!-- Right Side: GitHub & LinkedIn Icons -->
+        <ul class="icons" style="display: flex; gap: 1.25rem; list-style: none; margin: 0; padding: 0; align-items: center;">
+            <li>
+                <a href="https://github.com/ahmadhatemm" class="icon brands fa-github" target="_blank" rel="noopener noreferrer" style="color: #ffffff; font-size: 1.25rem; text-decoration: none;">
+                    <span class="label">GitHub</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://linkedin.com/in/ahmadhatem33" class="icon brands fa-linkedin-in" target="_blank" rel="noopener noreferrer" style="color: #ffffff; font-size: 1.25rem; text-decoration: none;">
+                    <span class="label">LinkedIn</span>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

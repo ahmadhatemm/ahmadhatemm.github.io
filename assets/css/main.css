@@ -4265,3 +4265,32 @@ img {
   max-width: 1200px; /* Centers page text content neatly */
   margin: 0 auto;
 }
+/* Remove extra padding surrounding the image wrapper */
+.project-image-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 1rem 0 !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+/* Force the image to crop cleanly across all project cards */
+.portfolio-hero-img {
+    width: 100% !important;
+    height: 280px !important;            /* Fixed height to fit everything in 1 view */
+    object-fit: cover !important;        /* Eliminates awkward blank space */
+    object-position: center !important;  /* Keeps the robot centered */
+    display: block !important;
+    border-radius: 12px !important;
+}
+.portfolio-hero-img {
+    width: 100% !important;
+    height: 350px !important;
+    object-fit: contain !important; /* Shows 100% of the image */
+    background-color: #282043;      /* Matches your dark purple background */
+    border-radius: 19px !important;
+}
