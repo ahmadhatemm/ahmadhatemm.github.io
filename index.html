@@ -1,486 +1,633 @@
-<!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
-		<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NFCW03Z063"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-NFCW03Z063');
-</script>
-		
-		<title>Ahmad Hatem's Portofolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="icon" type="image/png" href="images/favicon.png">
-	</head>
-	<body class="is-preload">
-
-		<!-- Sidebar -->
-		<section id="sidebar">
-			
-			<div class="inner">
-				<nav>
-					
-					<ul>
-    <li>
-        <a href="#intro" class="nav-home-button">
-            <img src="images/favicon.png" alt="Logo" class="nav-logo"> 
-            <span>Home</span>
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ahmad Hatem is a Mechatronics Engineering student focused on robotics, AI, automation, embedded systems, and mechanical design."
+    />
+    <title>Ahmad Hatem | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="assets/css/portfolio.css" />
+    <script defer src="assets/js/portfolio.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a href="#summary" class="brand" aria-label="Ahmad Hatem home">
+          <span class="name-light">AHMAD</span>
+          <span class="name-bold">HATEM</span>
         </a>
-    </li>
-    <li><a href="#one">Technical Projects</a></li>
-    <li><a href="#two">Technical Skills</a></li>
-    <li><a href="#three">Contact & Links</a></li>
-</ul>
-				</nav>
-			</div>
-		</section>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-				
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="#summary">Summary</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#skills">Technical Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
 
-				<!-- Intro -->
-<section id="intro" class="wrapper style1 fullscreen fade-up">
-	<div class="inner">
-		<h1>Ahmad Hatem</h1>
-		<p>I’m a senior Mechatronics Engineering student pursuing a dual degree at the University of East London and Ain Shams University, specializing in Robotics and Artificial Intelligence.</p>           
+        <button class="theme-toggle" type="button" aria-label="Toggle light and dark mode" aria-pressed="false">
+          <span class="toggle-indicator">Light</span>
+        </button>
+      </div>
+    </header>
 
-<p>Featured below is a comprehensive technical overview of my engineering projects across robotics, mechanical design, embedded systems, electronics, and programming. Each includes detailed documentation, 3D models, mechanical designs, circuit diagrams and code repositories</p>
-		<ul class="actions">
-			<li><a href="#one" class="button scrolly">View My Work</a></li>
-		</ul>
-	</div>
-</section>
+    <main class="page-shell">
+      <section id="summary" class="section intro reveal">
+        <div class="container intro-grid">
+          <div class="intro-copy">
+            <p class="eyebrow">Mechatronics Engineering Student <span class="specialty-divider">|</span> Specializing in Robotics &amp; AI</p>
+            <h1>
+              <span class="name-light">AHMAD</span>
+              <span class="name-bold">HATEM</span>
+            </h1>
+            <p class="lede">
+              I’m Ahmad Hatem, a Mechatronics Engineering student pursuing a dual degree at the University of East London and Ain Shams University, specializing in robotics and artificial intelligence. I build systems that sit at the intersection of mechanical design, embedded control, and practical automation.
+            </p>
 
-				<!-- One -->
-<section id="one" class="wrapper style2 fade-up">
-	<div class="inner">
-		<h2>Technical Projects</h2>
-		<p>Explore full-cycle builds grouped by specialized engineering sectors.</p>
-		
-		<div class="project-filters" style="margin-bottom: 2rem;">
-			<button class="button small active-filter" onclick="filterSelection('all')">Show All</button>
-			<button class="button small" onclick="filterSelection('robotics')">Robotics & AV</button>
-			<button class="button small" onclick="filterSelection('mechanical')">Mechanical & Manufacturing</button>
-			<button class="button small" onclick="filterSelection('embedded')">Embedded & Automation</button>
-			<button class="button small" onclick="filterSelection('electronics')">Electronics</button>
-			<button class="button small" onclick="filterSelection('software')">Software & Programming</button>
-		</div>
+            <div class="cta-row">
+              <a class="button primary" href="#projects">View projects</a>
+              <a class="button" href="assets/Ahmad Hatem - Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            </div>
 
-		<div class="row">
+            <ul class="quick-list" aria-label="Core focus areas">
+              <li>Robotics</li>
+              <li>AI</li>
+              <li>Automation</li>
+              <li>Embedded</li>
+              <li>Mechanical</li>
+            </ul>
+          </div>
 
-			<!--4. Delta Robot-->
-						<div class=" col-12-medium project-card robotics" data-date="2026-05">
-				<h3>Delta Robot</h3>
-				<span class="project-date">MAR 2026 – MAY 2026</span>
-				<div class="project-image-container">
-					
-        <img src="images/delta robot.png" alt="3-DOF Delta Robot - Advanced Robotics Course" class="portfolio-hero-img">
+          <div class="hero-collage" aria-label="Engineering project imagery">
+            <figure class="hero-card tall">
+              <img src="images/Car Picture.png" alt="Aluminum air-powered car" class="car-feature" />
+            </figure>
+            <figure class="hero-card">
+              <img src="images/Ecobee Picture.jpg" alt="Ecobee autonomous waste collection robot" />
+            </figure>
+            <figure class="hero-card">
+              <img src="images/delta robot.png" alt="Delta robot project" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section reveal">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-kicker">Work</p>
+            <h2>Experience</h2>
+          </div>
+          <div class="experience-list">
+            <article class="experience-item">
+              <div class="experience-heading">
+                <h3>Perception Engineer</h3>
+                <p class="timeline-meta">SEP 2025 – Present</p>
+              </div>
+              <p class="experience-employer">ASU Racing Team &amp; ARL – Shell AI Competition</p>
+              <ul>
+                <li>Engineered and optimized perception computer vision models to detect track lanes for our autonomous car.</li>
+                <li>Developed detailed simulation environments using ROS and Gazebo to validate LiDAR and camera sensor integration.</li>
+              </ul>
+            </article>
+
+            <article class="experience-item">
+              <div class="experience-heading">
+                <h3>AI Automation Engineer Trainee</h3>
+                <p class="timeline-meta">JUL 2026 – Present</p>
+              </div>
+              <p class="experience-employer">Digital Egypt Pioneers Initiative</p>
+              <ul>
+                <li>Automated a complete resume-screening system, a booking system for salons, and a grade-checking system that sends reports using n8n, python and APIs.</li>
+              </ul>
+            </article>
+
+            <article class="experience-item">
+              <div class="experience-heading">
+                <h3>Mechatronics Engineer Intern</h3>
+                <p class="timeline-meta">JUL 2026 – AUG 2026</p>
+              </div>
+              <p class="experience-employer">Gawad Mixers</p>
+              <ul>
+                <li>Spent a day in each production sector: casting, manufacturing, lubrication, finishing of sanitizers and mixers, and CAD design.</li>
+                <li>Designed my own mixer in SolidWorks while reviewing the company’s design files.</li>
+              </ul>
+            </article>
+
+            <article class="experience-item">
+              <div class="experience-heading">
+                <h3>Automotive Engineer Intern</h3>
+              </div>
+              <p class="experience-employer">Engovation &amp; Egyptian Engineers Syndicate</p>
+              <ul>
+                <li>Performed real-world vehicle diagnostics, analysing internal combustion engines and powertrain elements.</li>
+              </ul>
+            </article>
+
+            <article class="experience-item">
+              <div class="experience-heading">
+                <h3>Data Analyst Specialist Trainee</h3>
+                <p class="timeline-meta">APR 2025 – JUN 2025 · SEP 2024 – JUL 2025</p>
+              </div>
+              <p class="experience-employer">Google &amp; Digital Egypt Pioneers Initiative</p>
+              <ul>
+                <li>Analysed 2,000+ hotels in Cairo, comparing average nightly prices on peak and normal calendar days, their distribution, and sizes.</li>
+              </ul>
+            </article>
+
+            <article class="experience-item">
+              <div class="experience-heading">
+                <h3>Powertrain Engineer Trainee</h3>
+                <p class="timeline-meta">OCT 2024 – DEC 2024</p>
+              </div>
+              <p class="experience-employer">ASU Racing Team</p>
+              <ul>
+                <li>Designed and analysed motor control circuits and custom PCBs using component datasheets; implemented STM32 embedded control to interface with hardware.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section reveal">
+        <div class="container">
+          <div class="projects-header">
+            <div>
+              <p class="section-kicker">Selected work</p>
+              <h2>Projects</h2>
+            </div>
+
+            <div class="filter-bar" aria-label="Project filters">
+              <button class="filter-chip active" type="button" data-filter="all" aria-pressed="true">All</button>
+              <button class="filter-chip" type="button" data-filter="robotics-ai" aria-pressed="false">Robotics &amp; AI</button>
+              <button class="filter-chip" type="button" data-filter="automation" aria-pressed="false">Automation</button>
+              <button class="filter-chip" type="button" data-filter="embedded" aria-pressed="false">Embedded</button>
+              <button class="filter-chip" type="button" data-filter="mechanical" aria-pressed="false">Mechanical</button>
+              <button class="filter-chip" type="button" data-filter="software" aria-pressed="false">Software</button>
+            </div>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card" data-category="robotics-ai" data-project="delta-robot">
+              <div class="project-thumb project-thumb--contain">
+                <img src="images/delta robot.png" alt="Delta Robot" loading="lazy" decoding="async" />
+              </div>
+              <div class="project-body">
+                <p class="project-meta">MAR 2026 – MAY 2026</p>
+                <h3>Delta Robot</h3>
+                <p>Designed, manufactured and controlled a 3-DOF delta robot with a custom soft gripper and 3D motion planning.</p>
+              </div>
+              <div class="project-footer">
+                <button type="button" class="project-link">Open case study</button>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="robotics-ai" data-project="ecobee">
+              <div class="project-thumb">
+                <img src="images/Ecobee Picture.jpg" alt="Ecobee waste collection robot" loading="lazy" decoding="async" />
+              </div>
+              <div class="project-body">
+                <p class="project-meta">FEB 2026 – JUN 2026</p>
+                <h3>Ecobee</h3>
+                <p>Built an autonomous mobile robot that detects and collects targeted waste using computer vision and custom control logic.</p>
+              </div>
+              <div class="project-footer">
+                <button type="button" class="project-link">Open case study</button>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="robotics-ai" data-project="robotic-arm">
+              <div class="project-thumb project-thumb--contain">
+                <img src="images/robotic_arm.png" alt="6-DOF robotic manipulator" loading="lazy" decoding="async" />
+              </div>
+              <div class="project-body">
+                <p class="project-meta">OCT 2025 – JAN 2026</p>
+                <h3>6-DOF Manipulator</h3>
+                <p>Modeled, simulated, and physically integrated a robotic arm with a two-degree gripper and ROS-based motion planning.</p>
+              </div>
+              <div class="project-footer">
+                <button type="button" class="project-link">Open case study</button>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="robotics-ai" data-project="formation-control">
+              <div class="project-thumb project-thumb--contain">
+                <img src="images/rasprover.jpg" alt="Raspberry Pi rover for the multi-robot formation control graduation project" loading="lazy" decoding="async" />
+              </div>
+              <div class="project-body">
+                <p class="project-meta">OCT 2026 – PRESENT</p>
+                <h3>Multi-Robot Formation Control</h3>
+                <p>Graduation project: simulation infrastructure for four rover robots moving in formation, with a separate command topic for each rover.</p>
+              </div>
+              <div class="project-footer">
+                <button type="button" class="project-link">Open case study</button>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="mechanical" data-project="aluminum-car">
+              <div class="project-thumb project-thumb--contain">
+                <img src="images/Car Picture.png" alt="Aluminum air-powered car" loading="lazy" decoding="async" />
+              </div>
+              <div class="project-body">
+                <p class="project-meta">MAY 2026 – JUL 2026</p>
+                <h3>Aluminum Air-Powered Car</h3>
+                <p>Designed, manufactured, and tested an aluminum vehicle propelled by compressed air from a 3-litre, 10-bar tank.</p>
+              </div>
+              <div class="project-footer">
+                <button type="button" class="project-link">Open case study</button>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="robotics-ai" data-project="factory-cartesian">
+              <div class="project-thumb">
+                <img src="images/design1.png" alt="Factory Cartesian robot sorting components" loading="lazy" decoding="async" />
+              </div>
+              <div class="project-body">
+                <p class="project-meta">SEP 2025 – JAN 2026</p>
+                <h3>Factory Cartesian Robot</h3>
+                <p>Automated a classification and handling system using optical height detection and a Cartesian robotic manipulator.</p>
+              </div>
+              <div class="project-footer">
+                <button type="button" class="project-link">Open case study</button>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="automation" data-project="pid-water-tank">
+              <div class="project-thumb">
+                <img src="images/automation.png" alt="PID-controlled water tank level system" loading="lazy" decoding="async" />
+              </div>
+              <div class="project-body">
+                <p class="project-meta">MAY 2026 – JUN 2026</p>
+                <h3>PID Water Tank Level</h3>
+                <p>Programmed and simulated liquid-level control on a Siemens S7-1200 PLC using TIA Portal.</p>
+              </div>
+              <div class="project-footer">
+                <button type="button" class="project-link">Open case study</button>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="automation" data-project="smart-production">
+              <div class="project-thumb">
+                <img src="images/auto2.png" alt="Smart production system" loading="lazy" decoding="async" />
+              </div>
+              <div class="project-body">
+                <p class="project-meta">MAY 2026 – JUN 2026</p>
+                <h3>Smart Production System</h3>
+                <p>Designed and simulated an autonomous manufacturing line with PLC logic, sorting, and multi-part assembly workflows.</p>
+              </div>
+              <div class="project-footer">
+                <button type="button" class="project-link">Open case study</button>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="robotics-ai" data-project="wild-wheels">
+              <div class="project-thumb">
+                <img src="images/wildwheels.jpg" alt="Wild Wheels interactive track toy" loading="lazy" decoding="async" />
+              </div>
+              <div class="project-body">
+                <p class="project-meta">FEB 2025 – MAY 2025</p>
+                <h3>Wild Wheels</h3>
+                <p>Designed a toy car and track system with app control and lifting, sorting, and shooting mechanisms.</p>
+              </div>
+              <div class="project-footer">
+                <button type="button" class="project-link">Open case study</button>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="automation" data-project="motor-cart">
+              <div class="project-thumb">
+                <img src="images/control.png" alt="Motor-driven cart PID control system" loading="lazy" decoding="async" />
+              </div>
+              <div class="project-body">
+                <p class="project-meta">OCT 2025 – DEC 2025</p>
+                <h3>Motor-Driven Cart PID Control</h3>
+                <p>Designed and tested real-time PID position control for a motor-driven cart using MATLAB/Simulink and encoder feedback.</p>
+              </div>
+              <div class="project-footer">
+                <button type="button" class="project-link">Open case study</button>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="embedded" data-project="door-locker">
+              <div class="project-thumb">
+                <img src="images/doorlock.jpg" alt="Door locker security system" loading="lazy" decoding="async" />
+              </div>
+              <div class="project-body">
+                <p class="project-meta">NOV 2025 – JAN 2026</p>
+                <h3>Door Locker Security System</h3>
+                <p>Built a dual-ECU embedded security system with password authentication, persistent storage, and motor-driven door control.</p>
+              </div>
+              <div class="project-footer">
+                <button type="button" class="project-link">Open case study</button>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="software" data-project="agile-tool">
+              <div class="project-thumb">
+                <img src="images/agiletool.png" alt="Agile project management Java tool" loading="lazy" decoding="async" />
+              </div>
+              <div class="project-body">
+                <p class="project-meta">OCT 2025 – JAN 2026</p>
+                <h3>Agile Project Management Tool</h3>
+                <p>Created a Java-based tool to support Agile collaboration across product stakeholders, developers, and QA roles.</p>
+              </div>
+              <div class="project-footer">
+                <button type="button" class="project-link">Open case study</button>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="mechanical" data-project="turning-machine">
+              <div class="project-thumb">
+                <img src="images/manufacturing.jpg" alt="Turning machine mockup" loading="lazy" decoding="async" />
+              </div>
+              <div class="project-body">
+                <p class="project-meta">MAY 2024 – JUN 2024</p>
+                <h3>Turning Machine Mockup</h3>
+                <p>I led a team to build a working turning-machine mockup to demonstrate manufacturing and machine function principles.</p>
+              </div>
+              <div class="project-footer">
+                <button type="button" class="project-link">Open case study</button>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="mechanical" data-project="monorail-trolley">
+              <div class="project-thumb project-thumb--contain">
+                <img src="images/construction1.png" alt="Geared overhead monorail trolley project" loading="lazy" decoding="async" />
+              </div>
+              <div class="project-body">
+                <p class="project-meta">OCT 2025 – DEC 2025</p>
+                <h3>Monorail Trolley Stress Analysis</h3>
+                <p>Designed the trolley’s wheels, axles, shaft, side plates, and chain drive, with material selection and strength calculations.</p>
+              </div>
+              <div class="project-footer">
+                <button type="button" class="project-link">Open case study</button>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="mechanical" data-project="toy-car">
+              <div class="project-thumb">
+                <img src="images/construction2.jpeg" alt="Reverse-engineered toy car components" loading="lazy" decoding="async" />
+              </div>
+              <div class="project-body">
+                <p class="project-meta">OCT 2025 – DEC 2025</p>
+                <h3>Toy Car Reverse Engineering</h3>
+                <p>Disassembled and analyzed a toy car to understand its components, manufacturing techniques, and materials.</p>
+              </div>
+              <div class="project-footer">
+                <button type="button" class="project-link">Open case study</button>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="embedded" data-project="smart-balance">
+              <div class="project-thumb">
+                <img src="images/smartbalance.jpeg" alt="Smart sensitive balance" loading="lazy" decoding="async" />
+              </div>
+              <div class="project-body">
+                <p class="project-meta">MAY 2025 – JUN 2025</p>
+                <h3>Smart Sensitive Balance</h3>
+                <p>Developed a calibrated weight measurement system for applications in commerce and laboratory use with reliable measurement logic.</p>
+              </div>
+              <div class="project-footer">
+                <button type="button" class="project-link">Open case study</button>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="embedded" data-project="laser-alarm">
+              <div class="project-thumb">
+                <img src="images/electronics.png" alt="Laser alarm detector circuit" loading="lazy" decoding="async" />
+              </div>
+              <div class="project-body">
+                <p class="project-meta">APR 2025 – JUN 2025</p>
+                <h3>Laser Alarm Detector</h3>
+                <p>Designed a laser and light-sensor tripwire that triggers an alert when its beam is interrupted.</p>
+              </div>
+              <div class="project-footer">
+                <button type="button" class="project-link">Open case study</button>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="embedded" data-project="power-supply">
+              <div class="project-thumb">
+                <img src="images/powersupply.png" alt="Regulated 5V power supply" loading="lazy" decoding="async" />
+              </div>
+              <div class="project-body">
+                <p class="project-meta">APR 2025 – JUN 2025</p>
+                <h3>5V Power Supply</h3>
+                <p>Designed and built a regulated 5V DC supply from a 220V AC mains input.</p>
+              </div>
+              <div class="project-footer">
+                <button type="button" class="project-link">Open case study</button>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="embedded" data-project="buck-converter">
+              <div class="project-thumb">
+                <img src="images/buckconverter.png" alt="PWM buck converter" loading="lazy" decoding="async" />
+              </div>
+              <div class="project-body">
+                <p class="project-meta">APR 2025 – JUN 2025</p>
+                <h3>Buck Converter</h3>
+                <p>Built an Arduino-controlled PWM buck converter to supply variable lower voltage to a DC motor from a 12V source.</p>
+              </div>
+              <div class="project-footer">
+                <button type="button" class="project-link">Open case study</button>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="software" data-project="home-library">
+              <div class="project-thumb">
+                <img src="images/homelibrary.png" alt="Home Library website" loading="lazy" decoding="async" />
+              </div>
+              <div class="project-body">
+                <p class="project-meta">JUN 2026 – PRESENT</p>
+                <h3>Home Library Website</h3>
+                <p>Organizes a physical book collection with photos and generated indexes for arranging a home library.</p>
+              </div>
+              <div class="project-footer">
+                <button type="button" class="project-link">Open case study</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section reveal">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-kicker">Study</p>
+            <h2>Education</h2>
+          </div>
+          <div class="info-grid">
+            <article class="info-card">
+              <p class="meta-label">SEP 2023 – JUN 2027</p>
+              <h3>Mechatronics and Automation Engineering</h3>
+              <p>Ain Shams University &amp; University of East London</p>
+            </article>
+            <article class="info-card">
+              <p class="meta-label">SEP 2020 – JUN 2023</p>
+              <h3>A Levels</h3>
+              <p>Kaumeya International British School</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="certifications" class="section reveal">
+        <div class="container split-layout">
+          <div class="section-copy">
+            <div class="section-header">
+              <p class="section-kicker">Credentials</p>
+              <h2>Certifications</h2>
+            </div>
+          </div>
+
+          <div class="certification-list">
+            <p>IBM Machine Learning with Python <span>(2025)</span></p>
+            <p>Microsoft Azure AI Fundamentals <span>(2025)</span></p>
+            <p>IBM AI Fundamentals <span>(2025)</span></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section reveal">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-kicker">Capabilities</p>
+            <h2>Technical Skills</h2>
+          </div>
+
+          <div class="skills-resume">
+            <p><strong>Training:</strong> MATLAB Simulink Onramp and Simscape Onramp (2025)</p>
+            <p><strong>Programming:</strong> Python, C/C++, JavaScript, HTML, CSS, Java, MATLAB / Simulink, Stateflow</p>
+            <p><strong>Robotics &amp; simulation:</strong> ROS 2 (Humble), Gazebo, MoveIt 2, RViz2, micro-ROS, URDF/Xacro, LiDAR and camera integration</p>
+            <p><strong>Automation &amp; controls:</strong> PID control, Siemens TIA Portal (S7-1200 PLC), PLCSim, Factory I/O</p>
+            <p><strong>Embedded &amp; CAD:</strong> ESP32, Arduino, STM32, Raspberry Pi; I2C, SPI, UART; SolidWorks, Autodesk Inventor</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section reveal">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-kicker">Contact</p>
+            <h2>Get in touch</h2>
+          </div>
+
+          <div class="contact-wrap">
+            <div class="contact-panel">
+              <p class="meta-label">Reach me</p>
+              <ul class="contact-list">
+                <li class="contact-item">
+                  <span class="contact-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6H20V18H4V6ZM6 8L12 13L18 8H6Z" fill="currentColor"/></svg>
+                  </span>
+                  <span class="contact-copy">
+                    <strong>Email</strong>
+                    <a href="mailto:ahmadhatemmahmoud@gmail.com">ahmadhatemmahmoud@gmail.com</a>
+                  </span>
+                </li>
+
+                <li class="contact-item">
+                  <span class="contact-icon" aria-hidden="true">
+                    <i class="fas fa-file-pdf" aria-hidden="true"></i>
+                  </span>
+                  <span class="contact-copy">
+                    <strong>Resume</strong>
+                    <a href="assets/Ahmad Hatem - Resume.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contact-panel">
+              <p class="meta-label">Links</p>
+              <ul class="contact-list">
+                <li class="contact-item">
+                  <span class="contact-icon" aria-hidden="true">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                  </span>
+                  <span class="contact-copy">
+                    <strong>GitHub</strong>
+                    <a href="https://github.com/ahmadhatemm" target="_blank" rel="noopener noreferrer">github.com/ahmadhatemm</a>
+                  </span>
+                </li>
+
+                <li class="contact-item">
+                  <span class="contact-icon" aria-hidden="true">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                  </span>
+                  <span class="contact-copy">
+                    <strong>LinkedIn</strong>
+                    <a href="https://linkedin.com/in/ahmadhatem33" target="_blank" rel="noopener noreferrer">linkedin.com/in/ahmadhatem33</a>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Senior Mechatronics Engineering Student · Specializing in Robotics &amp; AI</p>
+        <div class="footer-links" aria-label="Social links">
+          <a href="assets/Ahmad Hatem - Resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open resume PDF">
+            <i class="fas fa-file-pdf" aria-hidden="true"></i>
+          </a>
+          <a href="https://github.com/ahmadhatemm" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i>
+          </a>
+          <a href="https://linkedin.com/in/ahmadhatem33" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal-backdrop" hidden>
+      <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+        <button class="modal-close" type="button" aria-label="Close project details">×</button>
+        <div class="modal-grid">
+          <div class="modal-media" aria-live="polite"></div>
+
+          <div class="modal-content">
+            <div class="modal-meta">
+              <span id="project-date">Project date</span>
+            </div>
+            <p class="section-kicker">Project details</p>
+            <h3 id="project-modal-title">Project title</h3>
+            <p id="project-summary">Summary</p>
+
+            <div class="modal-links">
+              <a id="project-video" href="#" target="_blank" rel="noopener noreferrer" hidden>Video</a>
+              <span id="project-reports" class="project-reports"></span>
+            </div>
+
+            <div>
+              <p class="meta-label">Stack</p>
+              <div id="project-stack" class="modal-meta"></div>
+            </div>
+
+            <div>
+              <p class="meta-label">What I built</p>
+              <p id="project-built">Project description.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-				<p>Designed, manufactured and controlled a 3-DOF Delta Robot, for the first time building a robot with that level of complexity. It was not only about how to control its 3 connected legs, the real challenge was to build it with 2 stepper motors and 1 dc motor for the last leg.</p>
-				<ul class="actions">
-					<li><a href="delta_robot.html" class="button small">View Details</a></li>
-				</ul>
-			</div>
-
-			<!--1. Aluminum Air Powered Car-->
-			<div class=" col-12-medium project-card mechanical" data-date="2026-07">
-				<h3>Aluminum Air Powered 
-Car</h3>
-<span class="project-date">MAY 2027 – JUL 2027</span>
-				<div class="project-image-container">
-        <img src="images/Car Picture.png" alt="Turning Machine Mockup">
-    </div>
-				<p>This project presents the design, manufacturing, and testing of an air-powered vehicle driven solely by compressed air energy. The vehicle utilizes a nozzle-based propulsion system to convert the stored pressure energy in a 3-liter, 10-bar air tank into kinetic energy that generates thrust. The design process includes fluid, mechanical, and electrical subsystems integration, with a focus on maximizing performance, minimizing weight, and ensuring reliable control and braking.</p>
-				<ul class="actions">
-					<li><a href="aluminum_car.html" class="button small">View Details</a></li>
-				</ul>
-			</div>
-
-			-			<!--2. Ecobee (Garbage thrower)-->
-		<div class=" col-12-medium project-card robotics" data-date="2026-06">
-				<h3>Ecobee (Garbage thrower)</h3>
-								<span class="project-date">FEB 2026 – JUN 2026</span>
-				<div class="project-image-container">
-        <img src="images/Ecobee Picture.jpg" alt="Ecobee (Garbage thrower)" class="portfolio-hero-img">
-    </div>
-				<p>EcoBee is an autonomous mobile robot engineered for automated waste detection and collection. Powered by a Raspberry Pi, the system utilizes AI-based computer vision to identify targeted litter on a surface, execute precise navigation and motion control, and collect the debris into an onboard bin.</p>
-				<ul class="actions">
-					<li><a href="ecobee.html" class="button small">View Details</a></li>
-				</ul>
-			</div>
-			
-			<!--6. 6-DOF Robotic Manipulator-->
-			<div class=" col-12-medium project-card robotics" data-date="2026-01">
-				<h3>6-DOF Robotic Manipulator</h3>
-				<span class="project-date">OCT 2025 – JAN 2026</span>
-		<div class="project-image-container" style="max-height: 280px; overflow: hidden; display: flex; justify-content: center; align-items: center; background: transparent;">
-    <img src="images/robotic_arm.png" alt="6-DOF Manipulator Simulation Analysis" style="max-height: 280px; width: auto; object-fit: contain;">
-</div>
-				<p>Designed, simulated, and physically integrated a 6-DOF robotic manipulator (4-DOF arm + 2-DOF independently actuated gripper). The project bridges the gap between digital twin simulation and real-world micro-ROS hardware actuation.</p>
-				<ul class="actions">
-					<li><a href="6dof_robotics_arm.html" class="button small">View Details</a></li>
-				</ul>
-			</div>
-
-			<!--7. Factory Cartesian Robot-->
-			<div class=" col-12-medium project-card robotics" data-date="2026-01">
-				<h3>Factory Cartesian Robot</h3>
-				<span class="project-date">SEP 2025 – JAN 2026</span>
-				<div class="project-image-container">
-        <img src="images/design1.png" alt="Factory Cartesian Robot" class="portfolio-hero-img">
-    </div>
-				<p>This project presents an automated classification and handling system designed to 
-sort two different components, lids and bases, using non-contact optical height 
-detection and a Cartesian robotic manipulator.</p>
-				<ul class="actions">
-					<!-- <li><a href="#" class="button small">View Details</a></li> -->
-				</ul>
-			</div>
-
-			<!--3. PID Controlled Water Tank Level-->
-			<div class=" col-12-medium project-card embedded" data-date="2026-06">
-				<h3>PID Controlled Water Tank Level</h3>
-				<span class="project-date">MAY 2026 – JUN 2026</span>
-				<div class="project-image-container">
-        <img src="images/automation.png" alt="PID Controlled Water Tank Level" class="portfolio-hero-img">
-    </div>
-				<p>Designed and implemented a closed-loop industrial liquid-level control system utilizing a Siemens S7-1200 PLC within the TIA Portal environment.</p>
-				<ul class="actions">
-					<!-- <li><a href="#" class="button small">View Details</a></li> -->
-				</ul>
-			</div>
-
-			<!--5. Smart Production System-->
-						<div class=" col-12-medium project-card embedded" data-date="2026-05">
-				<h3>Smart Production System</h3>
-				<span class="project-date"> MAY 2026 – JUN 2026</span>
-				<div class="project-image-container">
-        <img src="images/auto2.png" alt="Smart Production System" class="portfolio-hero-img">
-    </div>
-				<p> This project includes: design, programming, and simulation of a fully automated, 
-modular manufacturing line using Siemens TIA Portal, PLCSim, and Factory I/O. 
-The objective of the project is to develop and simulate a smart production system 
-capable of autonomous manufacturing, sorting, and multi-part assembly.</p>
-				<ul class="actions">
-					<!-- <li><a href="#" class="button small">View Details</a></li> -->
-				</ul>
-			</div>
-			
-			<!--8. Door Locker Security System-->
-			<div class=" col-12-medium project-card embedded" data-date="2026-01">
-				<h3>Door Locker Security System</h3>
-								<span class="project-date"> NOV 2025 – JAN 2026</span>
-				<div class="project-image-container">
-        <img src="images/doorlock.jpg" alt="Door Locker Security System" class="portfolio-hero-img">
-    </div>
-				<p>We built a dual-ECU system using TM4C123 (TivaC) boards that communicate over UART to handle everything from password authentication to motor-controlled door actuation. It features persistent EEPROM storage for passwords and an auto-lock system driven by a potentiometer.</p>
-				<ul class="actions">
-					<!-- <li><a href="#" class="button small">View Details</a></li> -->
-				</ul>
-			</div>
-
-			<!--9. Agile Project Management Java Tool-->
-						<div class=" col-12-medium project-card software" data-date="2026-01">
-				<h3>Agile Project Management Java Tool</h3>
-				<span class="project-date">OCT 2025 – JAN 2026</span>
-				<div class="project-image-container">
-        <img src="images/agiletool.png" alt="Agile Project Management Tool">
-    </div>
-				<p>The Agile Project Management System is a Java
-based application designed to simulate a real-world 
-enterprise Agile environment. The system supports 
-Agile methodology by enabling structured 
-collaboration between different roles such as 
-Stakeholders, ScrumMasters, Developers, and QA 
-Engineers. </p>
-				<ul class="actions">
-					<!-- <li><a href="#" class="button small">View Details</a></li> -->
-				</ul>
-			</div>
-
-			<!--5. Wild Wheels (Kids Toy)-->
-			<div class=" col-12-medium project-card robotics" data-date="2025-05">
-				<h3>Wild Wheels (Kids Toy)</h3>
-				<span class="project-date">FEB 2025 – MAY 2025</span>
-				<div class="project-image-container">
-        <img src="images/wildwheels.jpg" alt="Wild Wheels (Kids Toy)" class="portfolio-hero-img">
-    </div>
-				<p>We designed a hot-wheels-like toy for kids 5-16 years old in which they're able to use an app to control a whole circuit of tracks featuring lifting, sorting and shooting mechanisms. </p>
-				<ul class="actions">
-					<!-- <! - - li><a href="#" class="button small">View Details</a></li> -->
-				</ul>
-			</div>
-
-			
-
-				
-
-			
-
-			<!--9. Real‑Time PID Control of a Motor‑Driven Cart Using MATLAB/Simulink-->
-			<div class=" col-12-medium project-card embedded" data-date="2025-12">
-				<h3>Real‑Time PID Control of a Motor‑Driven Cart Using MATLAB/Simulink</h3>
-				<span class="project-date">OCT 2025 – DEC 2025</span>
-				<div class="project-image-container">
-        <img src="images/control.png" alt="Door Locker Security System" class="portfolio-hero-img">
-    </div>
-				<p>  
-This project presents the design and implementation of a real-time control system for a motor‑driven cart moving on a belt. The cart is physically constructed, equipped with a DC motor and an encoder, and controlled directly through MATLAB/Simulink using live input–output signals. The work includes developing a control‑oriented mathematical model of the cart’s electromechanical dynamics, estimating key parameters from experimental motion data, and validating the model against real measurements to ensure reliable controller design. A PID controller is then implemented to command the cart’s movement and bring it to precise stops at target positions, achieving fast response, minimal overshoot, and consistent performance in both simulation and hardware tests.</p>
-				<ul class="actions">
-					<!-- <li><a href="#" class="button small">View Details</a></li> -->
-				</ul>
-			</div>
-
-			<!--10. Smart Sensitive Balance-->
-			<div class=" col-12-medium project-card embedded" data-date="2025-06">
-				<h3>Smart Sensitive Balance</h3>
-				<span class="project-date">MAY 2025 – JUN 2025</span>
-				<div class="project-image-container">
-        <img src="images/smartbalance.jpeg" alt="Door Locker Security System" class="portfolio-hero-img">
-    </div>
-				<p>The primary objective of this project is to create a simple and scalable system for different 
-uses such as commerce or laboratories, which is a fully calibrated weight measurement 
-system capable of reliably measuring loads from 5 g up to 10 kg and determining the 
-accuracy and precision of the device.</p>
-				<ul class="actions">
-					<!-- <li><a href="#" class="button small">View Details</a></li> -->
-				</ul>
-			</div>
-
-			<!--12. Monorail Trolley Stress Analysis-->
-			<div class=" col-12-medium project-card mechanical" data-date="2025-12">
-				<h3>Monorail Trolley Stress Analysis</h3>
-				<span class="project-date">OCT 2025 – DEC 2025</span>
-				<div class="project-image-container">
-        <img src="images/construction1.png" alt="Turning Machine Mockup">
-    </div>
-				<p>This project presents the design of a Geared Overhead Monorail Trolley. The work 
-includes the selection and design of its main components such as wheels, axles, shaft, 
-side plates, and the chain drive system. Engineering drawings, material selection, and 
-basic strength calculations are carried out to ensure the trolley can safely carry the 
-specified load while meeting manufacturing requirements</p>
-				<ul class="actions">
-					<li><a href="#" class="button small">View Details</a></li>
-				</ul>
-			</div>
-
-			<!--13. Toy Car Reverse Engineering-->	
-			<div class=" col-12-medium project-card mechanical" data-date="2025-12">
-				<h3>Toy Car Reverse Engineering</h3>
-				<span class="project-date">OCT 2025 – DEC 2025</span>
-				<div class="project-image-container">
-        <img src="images/construction2.jpeg" alt="Turning Machine Mockup">
-    </div>
-				<p>This project involves the reverse engineering of a toy car to understand its design and functionality. The process includes disassembly, analysis of components, and reconstruction to identify the manufacturing techniques and materials used.</p>
-				<ul class="actions">
-					<!-- <li><a href="#" class="button small">View Details</a></li> -->
-				</ul>
-			</div>
-
-			<!--14. Turning Machine Mockup-->
-			<div class=" col-12-medium project-card mechanical" data-date="2024-06">
-				<h3>Turning Machine Mockup</h3>
-				<span class="project-date">MAY 2024 – JUN 2024</span>
-				<div class="project-image-container">
-        <img src="images/manufacturing.jpg" alt="Turning Machine Mockup">
-    </div>
-				<p>I led a group of 7 colleagues to build a mockup of a turning machine as part of a project to demonstrate our understanding of manufacturing machines, such as milling, drilling, and grinding. We chose the turning machine, which is used to form holes in metal or reshape its dimensions, and constructed it using simple wooden parts and a motor repurposed from an old drill</p>
-				<ul class="actions">
-					<!-- <li><a href="#" class="button small">View Details</a></li> -->
-				</ul>
-			</div>
-
-			<!--15. Laser Alarm Detector Circuit-->
-			<div class=" col-12-medium project-card electronics" data-date="2025-06">
-				<h3>Laser Alarm Detector Circuit</h3>
-				<span class="project-date">APR 2025 – JUN 2025</span>
-				<div class="project-image-container">
-        <img src="images/electronics.png" alt="Laser Alarm Detector">
-    </div>
-				<p>We designed a laser alarm detector uses a focused laser beam and a light sensor to form a 
-tripwire: when the beam is interrupted, the system triggers an alert. It is common in home security, doorway monitoring, and industrial perimeters for 
-intrusion detection.
-</p>
-				<ul class="actions">
-					<!-- <li><a href="#" class="button small">View Details</a></li> -->
-				</ul>
-			</div>
-
-			<!--16. 5V Power Supply-->
-						<div class=" col-12-medium project-card electronics" data-date="2025-06">
-				<h3>5V Power Supply</h3>
-				<span class="project-date">APR 2025 – JUN 2025</span>
-				<div class="project-image-container">
-        <img src="images/powersupply.png" alt="5V Power Supply">
-    </div>
-				<p>This project focuses on designing and building a regulated 5V DC power supply from a 220V AC 
-mains input. Such power supplies are essential in electronics because many components like 
-microcontrollers, sensors, and digital circuits require a constant 5V DC to function properly. 
-</p>
-				<ul class="actions">
-					<!-- <li><a href="#" class="button small">View Details</a></li> -->
-				</ul>
-			</div>
-
-			<!--17. Buck Converter-->
-									<div class=" col-12-medium project-card electronics" data-date="2025-06">
-				<h3>Buck Converter</h3>
-				<span class="project-date">APR 2025 – JUN 2025</span>
-				<div class="project-image-container">
-        <img src="images/buckconverter.png" alt="Buck Converter">
-    </div>
-				<p>For this project, we creatively designed and build a buck converter which steps down the 
-voltage between different DC levels. The objective is to get a variable lower voltage to power a 
-DC motor, drawing power from a 12V DC source. Arduino Uno is used for the control system 
-which sends out a Pulse Width Modulated (PWM) signal that adjusts the actual output voltage 
-every moment.
-</p>
-				<ul class="actions">
-					<!-- <li><a href="#" class="button small">View Details</a></li> -->
-				</ul>
-			</div>
-			
-		
-
-			<!--19. Home Library Website-->
-			<div class=" col-12-medium project-card software">
-				<h3>Home Library Website</h3>
-				<span class="project-date">JUN 2026 – PRESENT</span>
-				<div class="project-image-container">
-        <img src="images/homelibrary.png" alt="Home Library">
-    </div>
-				<p>Turn scattered books into an organized virtual library. Capture photos, generate indexes, and use them to arrange your physical library.</p>
-				<ul class="actions">
-					<!-- <li><a href="#" class="button small">View Details</a></li> -->
-				</ul>
-			</div>
-
-
-
-		</div>
-	</div>
-</section>
-
-				<!-- Two -->
-					<!-- Two -->
-<section id="two" class="wrapper style3 fade-up">
-	<div class="inner">
-		<h2>Technical Skills</h2>
-		<p>Core competencies bridged across mechanical design, embedded software architecture, and high-level control loop algorithms.</p>
-		<div class="features">
-			<section>
-				<span class="icon solid major fa-code"></span>
-				<h3>Robotics Frameworks</h3>
-				<p>ROS 2 (Humble), MoveIt 2, Gazebo Simulation, RViz2, micro-ROS environment mapping.</p>
-			</section>
-			<section>
-				<span class="icon solid major fa-microchip"></span>
-				<h3>Embedded Systems</h3>
-				<p>Microcontrollers (ESP32, Arduino), C/C++ development, firmware optimization, serial protocols (I2C, SPI, UART).</p>
-			</section>
-			<section>
-				<span class="icon solid major fa-cog"></span>
-				<h3>CAD & Mechanical Modeling</h3>
-				<p>SolidWorks (parametric assembly, mesh modification), Autodesk Inventor, URDF/Xacro robot generation.</p>
-			</section>
-			<section>
-				<span class="icon solid major fa-desktop"></span>
-				<h3>Software & Controls</h3>
-				<p>Python (GUI engineering), MATLAB / Simulink, Stateflow logic systems development.</p>
-			</section>
-		</div>
-	</div>
-</section>
-
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Get in touch</h2>
-							<div class="split style1">
-								<section>
-									<section>
-	<h3>Let's Connect</h3>
-	<p>Always open to collaborating on automated systems, robotics research, or core embedded systems positions.</p>
-	<ul class="contact">
-		<li>
-			<h3>Email</h3>
-			<a class = "email" href="mailto:your.email@example.com">ahmadhatemmahmoud@gmail.com</a>
-		</li>
-		<li>
-			<h3>Socials & Source Code</h3>
-			<ul class="icons">
-				<li><a href="https://github.com/ahmadhatemm" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-				<li><a href="https://linkedin.com/in/ahmadhatem33" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-			</ul>
-		</li>
-	</ul>
-</section>
-								</section>
-								
-							</div>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-		<script>
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("project-card");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-    if (x[i].className.indexOf(c) > -1) {
-      x[i].style.display = "block";
-    }
-  }
-  
-  // Add active styling to current button
-  var btnContainer = document.querySelector(".project-filters");
-  var btns = btnContainer.getElementsByClassName("button");
-  for (var j = 0; j < btns.length; j++) {
-    btns[j].addEventListener("click", function(){
-      var current = btnContainer.getElementsByClassName("active-filter");
-      if (current.length > 0) { current[0].className = current[0].className.replace(" active-filter", ""); }
-      this.className += " active-filter";
-    });
-  }
-}
-// Run default on load
-filterSelection('all');
-</script>
-
-	</body>
+  </body>
 </html>
